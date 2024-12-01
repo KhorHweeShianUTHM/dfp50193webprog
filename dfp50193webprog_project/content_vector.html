@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> - freePhotos - </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slideshow.css">
+<link rel="stylesheet" href="css/searchbar.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+/* Style the gallery */
+.gallery {
+  border: 1px solid #ccc;
+}
+
+/* size of gallery image */
+.gallery img{
+  width: 200px;
+  height: 200px;
+}
+
+/* when hover on gallery */
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+/* Discription on gallery */
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery, .desc{
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="navbar">
+	  <a href="index.html">Home</a>
+	  <a href="content_icon.html">Icon</a>
+	  <a href="content_photo.html">Photo</a>
+	  <a href="content_gif.html">Gif</a>
+	  <a class="active" href="content_vector.html">Vector</a>
+	  <a href="about.html">About</a>
+	  <a href="form.html">Feedback</a>
+	</div>
+
+	<div class="header">
+		<h1>Free Vectors</h1>
+	</div>
+
+	<div class="slideshow-container">
+		<!-- Icon slideshow -->
+		<div class="mySlides fade"> <!-- It is two class one is "mySlides" and one is "fade" -->
+			<div class="numbertext">1 / 4</div>
+			<img src="image/vector1.jpg" style="width:100%">
+		</div>
+		<!-- Photo slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="image/vector2.jpg" style="width:100%">
+		</div>
+		<!-- Gif slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="image/vector3.jpg" style="width:100%">
+		</div>
+		<!-- Vector slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="image/vector4.jpg" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> <!-- Icon slideshow -->
+	  <span class="dot" onclick="currentSlide(2)"></span> <!-- Photo slideshow -->
+	  <span class="dot" onclick="currentSlide(3)"></span> <!-- Gif slideshow -->
+	  <span class="dot" onclick="currentSlide(4)"></span> <!-- Vector slideshow -->
+	</div>
+
+
+	<div class="searbar-container">
+		<div class="InputBox">
+		<input type="search" placeholder="Search for photo" id="SearchInput">
+			<div class="SearchIcon">
+				<i class="material-icons">expand_more</i>
+			</div>
+			<ul class="SearchResult" id="SearchResult">
+				<li><i class="material-icons">looks</i><a href="search_rainbow_vector.html">Rainbow</a><li>
+				<li><i class="material-icons">directions_car</i><a href="search_car_vector.html">Car</a><li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+	  <h2 style="text-align:center;"><u><mark>Vector Collections</mark></u></h2>
+	  <div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/rainbow_vector/r7.jpg">
+					<img src="image/rainbow_vector/r7.jpg" style="width:100%">
+				</a>
+				<div class="desc">A beautiful rainbow</div>
+			</div>
+	  </div>
+	  
+	  <div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/car_vector/c7.jpg">
+					<img src="image/car_vector/c7.jpg" style="width:100%">
+				</a>
+				<div class="desc">A Sports Car is shown</div>
+			</div>
+	  </div>
+	  
+	  <div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/rainbow_vector/r4.jpg">
+					<img src="image/rainbow_vector/r4.jpg" style="width:100%">
+				</a>
+				<div class="desc">An Animation Rainbow</div>
+			</div>
+	  </div>
+	  
+	  <div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/car_vector/c4.jpg">
+					<img src="image/car_vector/c4.jpg" style="width:100%">
+				</a>
+				<div class="desc">A Car</div>
+			</div>
+	  </div>
+	</div>
+
+	<div class="footer">
+	  <p>© 2021 freePhotos</p>
+	</div>
+ </div>
+<script src="js/slideshow.js"></script> 
+<script src="js/searchbar.js"></script> 
+
+</body>
+</html>

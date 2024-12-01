@@ -1,0 +1,189 @@
+<!DOCTYPE html> <!-- HTML 5 -->
+<html lang="en"> <!-- start of html -->
+<head> <!-- start of head -->
+<title>Malaysia Mountain Forest</title> <!-- title of the website -->
+<meta charset="utf-8"> <!-- The charset attribute specifies the character encoding for the HTML document. -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon -->
+<link rel="stylesheet" href="css/style.css"> <!-- css of website -->
+<style>
+/* style of Introduction */
+.Introduction {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* style of Introcolumn */
+.Introcolumn {
+  background-color:#e6f9e5;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  margin: 5px;
+  border-radius: 10px;
+  text-align:center;
+}
+
+/* style of icon */
+.icon{
+  margin:5px 5px 5px 5px;
+  font-size:36px;
+}
+
+/* style of icon link is link, visited, hover and active */
+.icon a:link,.icon a:visited,.icon a:hover,.icon a:active {
+  color: #44585e;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* style of video */
+#video {
+  width:800px; 
+}
+
+/* style of columnGallery */
+.columnGallery {
+  padding: 10px;
+  display: inline-block;
+  width: 24%;
+}
+
+/* style of gallery */
+.gallery {
+background-color:white;
+  border: 1px solid #ccc;
+}
+
+/* style of gallery is hover */
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+/* style of gallery image */
+.gallery img {
+  height: 200px;
+}
+
+/* style of gallery description */
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* responsive layout of column, gallery, desc and video */
+@media only screen and (max-width: 600px) {
+  .column {
+    position: relative;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+  }
+  .gallery,.desc {
+    width:100%;
+  }
+  #video {
+    width: 75%
+  }
+}
+</style>
+</head> <!-- end of head -->
+
+<body onload="myFunction()"> <!-- start of body -->
+<div class="wrap"> <!-- start of wrap -->
+	<div class="header" id="header"> <!-- start of header -->
+		<img src="image/cover.jpg" style="width:100%"> <!-- header image -->
+	</div> <!-- end of header -->
+        
+    <div class="navbar" id="navbar"> <!-- start of navigation bar -->
+		<ul> <!-- start of ul -->
+			<li><a href="index.html"><b>Home</b></a></li> <!-- link to index.html -->
+			<li><a href="about.html"><b>About</b></a></li> <!-- link to about.html -->
+			<li><a href="gallery.html"><b>Gallery</b></a></li> <!-- link to gallery.html -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Mountain</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mount_kinabalu.html">Mount Kinabalu</a> <!-- link to mount_kinabalu.html -->
+					<a href="mount_murud.html">Mount Murud</a> <!-- link to mount_murud.html -->
+					<a href="crocker_range.html">Crocker Range</a> <!-- link to crocker_range.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Forest</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mossy_forest.html">Mossy Forest</a> <!-- link to mossy_forest.html -->
+					<a href="sungai_tua.html">Sungai Tua Recreational Forest</a> <!-- link to sungai_tua.html -->
+					<a class="active" href="kilim_karst.html">Kilim Karst Geoforest Park</a> <!-- link to kilim_karst.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<li><a href="contact.html"><b>Contact</b></a></li> <!-- link to contact.html -->
+			<li><a href="form.html"><b>Feedback</b></a></li> <!-- link to form.html -->
+		</ul> <!-- end of ul -->
+	</div> <!-- end of navigation bar -->
+
+   <div class="content" id="content"> <!-- start of content -->
+		<h1 style="text-align:center; color:#ffffe6;">Kilim Karst Geoforest Park</h1> <!-- style of Kilim Karst text heading -->
+			<center><video id="video" controls> <!-- start of video -->
+				<source src="video/kilim_karst.mp4" type="video/mp4"> <!-- link of kilim_karst video -->
+			</video></center> <!-- end of video -->
+		<div class="Introduction" id="Introduction"> <!-- start of Introduction --> 
+			<div class="Introcolumn"> <!-- start of Introcolumn -->
+				<h2 style="color:#5e9f5a;"><b>Kilim Karst Geoforest Park</b></h2> <!-- text heading(h2) -->
+				<p style="color:#44585e;">Sungai Tua Recreational Forest (<i>Hutan Lipur Sungai Tua</i>) is a <mark>popular recreational forest</mark> within the Selangor State Park located about <u>15km north of Batu Caves.</u></p> <!-- paragraph -->
+				<p style="color:#44585e;"><b> ===== <mark><u>More Details</u></mark> ===== </b></p> <!-- paragraph -->
+				<div class="icon"> <!-- start of icon -->
+					<a href="https://kilimgeoforestpark.com/"><i class="fa fa-external-link"></i></a> <!-- link to anothoer page -->
+				</div> <!-- end of icon -->
+			</div> <!-- end of Introcolumn -->
+		</div> <!-- end of Introduction --> 
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk1.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk1.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 1</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk2.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk2.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 2</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk3.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk3.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 3</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk4.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk4.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 4</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+	</div> <!-- end of content -->
+	
+    <div class="footer" id="footer"> <!-- start of footer --> 
+		<p><b>@ Malaysia Mountain Forest (2021)</b></p> <!-- text of footer --> 
+	</div> <!-- end of footer --> 
+</div>
+<script> 
+function myFunction() { // function of body onload
+alert("This is a Kilim Karst Geoforest Park Page");
+}
+</script>
+
+</body> <!-- end of body --> 
+</html> <!-- end of html --> 

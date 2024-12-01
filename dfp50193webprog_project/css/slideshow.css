@@ -1,0 +1,84 @@
+/* ======================================= slide show start ======================================= */
+/* Part of SlideShow */
+.mySlides {
+display: none;
+}
+/* SlideShow image */
+.mySlides img{
+  width: 800px;
+  height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height:50%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px; /* Negative values are not allowed */
+  margin-top: -22px;
+  color: orange; /* previous and next arrow color*/
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; /* top-left | top-right | bottom-right | bottom-left */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: orange;
+  font-size: 30px;
+  padding: 8px 12px; /* top,bottom:8px ; left,right:12px */
+  position: absolute; /* absolute/fixed can used in viewport(refer line 5)*/
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  border: 2px solid orange;
+  cursor: pointer;
+  height: 15px; /* dot size (use default only) */
+  width: 15px;	/* dot size (use default only) */
+  margin: 0 2px; / * dot spacing */
+  background-color: #bbb; /* dot foreground color */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom:10px;
+}
+
+/* When the slideshow is active and hover */
+.active,.dot:hover {
+  background-color: orange; /* dot navigation color */
+}
+
+@media screen and (max-width: 600px){
+	.slideshow-container{
+		width:100%;
+		height: 50%;
+	}
+	.prev, .next,.numbertext{
+		font-size: 20px;
+	}
+}
+/* ======================================= slide show end ======================================= */

@@ -1,0 +1,212 @@
+/* Style to my website */
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body of website */
+body {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	background-image: url("../image/wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+}
+
+/* style of wrapper */
+.wrap {
+	width: auto;
+	height: auto;
+}
+
+/* style of header */
+.header {
+	margin-bottom:5px;
+}
+
+/* style of image header */
+.header img{
+	height: 300px;
+}
+
+/* Style of navbar */
+.navbar {
+	overflow: hidden;
+	background-color: #37512c;
+}
+
+/* Style of navbar ul, the <ul> tag defines an unordered (bulleted) list. */
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Style of navbar li. The <li> tag defines a list item. */
+.navbar li {
+	float: left;
+}
+
+/* Style of navbar li a, the <a> tag defines a hyperlink, which is used to link from one page to another. */
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Style of navbar li a.active, the :active selector is used to select and style the active link. */
+.navbar li a.active {
+	background-color: #613722;
+	color: white;
+}
+/* Style of navbar li a:hover, the :hover selector is used to select elements when you mouse over them. */
+.navbar li a:hover:not(.active) {
+	background-color: #ebe4b4;
+	color: #613722;
+	text-decoration: underline;
+}
+
+/* Style of dropdown menu, when user moves the mouse over an element. */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Style of dropdown menu and its dropdown button */
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+/* Style of when dropdown menu is hover */
+.dropdown:hover .dropbtn {
+	background-color: #ebe4b4;
+	color: #613722;
+	text-decoration: underline;
+}
+
+/* Style of dropdown-content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ebe4b4;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Style of dropdown-content a (hyperlink) */
+.dropdown-content a {
+	float: none;
+	color: #613722;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* when dropdown-content a (hyperlink) is hover */
+.dropdown-content a:hover {
+	background-color: #ebe4b4;
+	color: #613722;
+	text-decoration: underline;
+}
+
+/* when dropdown-content a (hyperlink) is active */
+.dropdown-content a.active {
+	background-color: #613722;
+	color: white;
+}
+
+/* style of dropdown is hover and dropdown-content */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* style of content */
+.content {
+	padding: 15px;
+	background-color:#50c878;
+}
+
+/* style of content:after, the :after selector inserts something after the content of each selected elements. */
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* style of column */
+.column {
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+/* style of c1 (column 1) */
+.column .c1 {
+	float: right;
+	background-color:#ffdbd2;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+/* style of c2 (column 2) */
+.column .c2 {
+	float: right;
+	background-color:#dff8ff;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+/* style of c3 (column 3) */
+.column .c3 {
+	float: right;
+	background-color:#e6f9e5;
+	color: white;
+	padding: 20px;
+	width: 50%;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+/* style of each column image */
+.c1 img,.c2 img,.c3 img {
+	height: 250px;
+}
+
+/* responsive layout of 3 column */
+@media only screen and (max-width: 600px) {
+  .c1,.c2,.c3 {
+    width: 100%;
+  }
+  .c1 img,.c2 img,.c3 img {
+	height: 0px;
+  }
+}
+
+/* style of footer */
+.footer {
+	font-size: 20px;
+	color:white;
+	padding: 20px;
+	text-align: center;
+	background: #37512c;
+}

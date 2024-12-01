@@ -1,0 +1,212 @@
+<!DOCTYPE html> <!-- HTML 5 -->
+<html lang="en"> <!-- start of html -->
+<head> <!-- start of head -->
+<title>Malaysia Mountain Forest</title> <!-- title of the website -->
+<meta charset="utf-8"> <!-- meta charset with utf-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- meta with control the page size -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> <!-- import icon -->
+<link rel="stylesheet" href="css/slideshow.css"> <!-- css of slideshow -->
+<link rel="stylesheet" href="css/clock.css"> <!-- css of clock -->
+<link rel="stylesheet" href="css/calendar.css"> <!-- css of calendar -->
+<link rel="stylesheet" href="css/style.css"> <!-- css of website -->
+</head> <!-- end of head -->
+
+<body onload="myFunction()"> <!-- start of body -->
+<div class="wrap"> <!-- start of wrap -->
+	<div class="header" id="header"> <!-- start of header -->
+		<img src="image/cover.jpg" style="width:100%"> <!-- header image -->
+	</div> <!-- end of header -->
+        
+    <div class="navbar" id="navbar"> <!-- start of navigation bar -->
+		<ul> <!-- start of ul -->
+			<li><a class="active" href="index.html"><b>Home</b></a></li> <!-- link to index.html -->
+			<li><a href="about.html"><b>About</b></a></li> <!-- link to about.html -->
+			<li><a href="gallery.html"><b>Gallery</b></a></li> <!-- link to gallery.html -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Mountain</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mount_kinabalu.html">Mount Kinabalu</a> <!-- link to mount_kinabalu.html -->
+					<a href="mount_murud.html">Mount Murud</a> <!-- link to mount_murud.html -->
+					<a href="crocker_range.html">Crocker Range</a> <!-- link to crocker_range.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Forest</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mossy_forest.html">Mossy Forest</a> <!-- link to mossy_forest.html -->
+					<a href="sungai_tua.html">Sungai Tua Recreational Forest</a> <!-- link to sungai_tua.html -->
+					<a href="kilim_karst.html">Kilim Karst Geoforest Park</a> <!-- link to kilim_karst.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<li><a href="contact.html"><b>Contact</b></a></li> <!-- link to contact.html -->
+			<li><a href="form.html"><b>Feedback</b></a></li> <!-- link to form.html -->
+		</ul> <!-- end of ul -->
+	</div> <!-- end of navigation bar -->
+
+    <div class="content" id="content"> <!-- start of content -->
+		<center> <!-- start of center the clock place -->
+		<!-- start of clock -->
+		<div class="clock"> 
+			<span class="clock-time"></span> <!-- span of clock time -->
+			<span class="clock-ampm"></span> <!-- span of clock ampm -->
+		</div> <!-- end of clock -->
+		</center> <!-- end of center the clock place -->
+		
+		<div class="slideshow-container"> <!-- start of slideshow container -->
+			<div class="mySlides fade"> <!-- start of mySlides and fade div -->
+				<div class="numbertext">1 / 4</div> <!-- number text of slide upper-right side -->
+				<img src="image/godfather1.jpg" style="width:100%"> <!-- image of slideshow -->
+				<div class="text">Crocker Range</div> <!-- description of slide -->
+			</div> <!-- end of mySlides and fade div -->
+
+			<div class="mySlides fade"> <!-- start of mySlides and fade div -->
+				<div class="numbertext">2 / 4</div> <!-- number text of slide upper-right side -->
+				<img src="image/godfather2.jpg" style="width:100%"> <!-- image of slideshow -->
+				<div class="text">Kilim Karst Geoforest Park</div> <!-- description of slide -->
+			</div> <!-- end of mySlides and fade div -->
+
+			<div class="mySlides fade"> <!-- start of mySlides and fade div -->
+				<div class="numbertext">3 / 4</div> <!-- number text of slide upper-right side -->
+				<img src="image/godfather3.jpg" style="width:100%"> <!-- image of slideshow -->
+				<div class="text">Mossy Forest</div> <!-- description of slide -->
+			</div> <!-- end of mySlides and fade div -->
+			
+			<div class="mySlides fade"> <!-- start of mySlides and fade div -->
+				<div class="numbertext">4 / 4</div> <!-- number text of slide upper-right side -->
+				<img src="image/godfather4.jpg" style="width:100%"> <!-- image of slideshow -->
+				<div class="text">Mount Kinabalu</div> <!-- description of slide -->
+			</div> <!-- end of mySlides and fade div -->
+
+		  <!-- start of Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div> <!-- end of slideshow container -->
+		<br> <!-- break line -->
+		
+		<center> <!-- start of let dot in center place -->
+			<span class="dot" onclick="currentSlide(1)"></span> <!-- first dot -->
+			<span class="dot" onclick="currentSlide(2)"></span> <!-- second dot -->
+			<span class="dot" onclick="currentSlide(3)"></span> <!-- third dot -->
+			<span class="dot" onclick="currentSlide(4)"></span> <!-- fourth dot -->
+		</center> <!-- end of let dot in center place -->
+	
+		<div class="column"> <!-- start of column --> 
+			<div class="c1"> <!-- start of c1 (column 1) -->
+				<h2 style="color:#e95d3a;">MALAYSIA</h2><br> <!-- text heading(h2) -->
+				<p style="color:#44585e;">Malaysia is a beautiful and diverse country with many highlights. The many different regions, each with their own characteristic features, make this country the perfect destination for tourists.</p> <!-- paragraph -->
+			</div> <!-- end of c1 (column 1) -->
+			<div class="c2"> <!-- start of c2 (column 2) -->
+				<h2 style="color:#167287;">MOUNTAIN</h2><br> <!-- text heading(h2) -->
+				<p style="color:#44585e;">A mountain differs from a plateau in having a limited summit area, and is larger than a hill, typically rising at least 300 metres (1000 feet) above the surrounding land.</p> <!-- paragraph -->
+			</div> <!-- end of c2 (column 2) -->
+			<div class="c3"> <!-- start of c3 (column 3) -->
+				<h2 style="color:#5e9f5a;">FOREST</h2><br> <!-- text heading(h2) -->
+				<p style="color:#44585e;">Forests cover 30% of the Earth’s surface and contain much of the biological diversity found on land – they harbour over two-thirds of known terrestrial species, many of which are threatened.</p> <!-- paragraph -->
+			</div> <!-- end of c3 (column 3) -->
+		</div> <!-- end of column -->  
+		
+		<!-- start of calendar -->
+		<center><div class="sideb"> <!-- start of sidebar -->
+			<h2 style="color:green">Calendar</h2>
+			<div class="cheader"> <!-- start of calendar-header -->
+				<i class="fa fa-angle-left" aria-hidden="true"></i> <!-- left arrow icon -->
+				<center> <!-- start of center month and year -->
+					<span class="month"></span> <!-- month -->
+					<span class="year"></span> <!-- year -->
+				</center> <!-- end of center month and year -->
+				<i class="fa fa-angle-right" aria-hidden="true"></i> <!-- right arrow icon -->
+			</div> <!-- end of calendar-header -->
+			<div class="calender"> <!-- start of calendar conditioner -->
+				<table> <!-- start of table -->
+					<thead> <!-- start of table-header -->
+						<tr class="weedays"> <!-- start of table-row -->
+							<th data-weekday="sun" data-column="0">Sun</th>
+							<th data-weekday="mon" data-column="1">Mon</th>
+							<th data-weekday="tue" data-column="2">Tue</th>
+							<th data-weekday="wed" data-column="3">Wed</th>
+							<th data-weekday="thu" data-column="4">Thu</th>
+							<th data-weekday="fri" data-column="5">Fri</th>
+							<th data-weekday="sat" data-column="6">Sat</th>
+						</tr> <!-- end of table-row -->
+					</thead> <!-- end of table-header -->
+					<tbody> <!-- start of table-body -->
+						<tr class="days" data-row="0"> <!-- start of table-row 0 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 0 -->
+						<tr class="days" data-row="1"> <!-- start of table-row 1 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 1 -->
+						<tr class="days" data-row="2"> <!-- start of table-row 2 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 2 -->
+						<tr class="days" data-row="3"> <!-- start of table-row 3 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 3 -->
+						<tr class="days" data-row="4"> <!-- start of table-row 4 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 4 -->
+						<tr class="days" data-row="5"> <!-- start of table-row 5 -->
+							<td data-column="0"></td>
+							<td data-column="1"></td>
+							<td data-column="2"></td>
+							<td data-column="3"></td>
+							<td data-column="4"></td>
+							<td data-column="5"></td>
+							<td data-column="6"></td>
+						</tr> <!-- end of table-row 5 -->
+					</tbody> <!-- end of table-body -->
+				</table> <!-- end of table -->
+			</div> <!-- end of calendar conditioner -->
+		</div></center> <!-- end of calendar -->
+	</div> <!-- end of content -->
+	
+    <div class="footer" id="footer"> <!-- start of footer --> 
+		<p><b>@ Malaysia Mountain Forest (2021)</b></p> <!-- text of footer --> 
+	</div> <!-- end of footer --> 
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- import jQuery -->
+<script src="js/slideshow.js"></script> <!-- javascript of slideshow --> 
+<script src="js/clock.js"></script> <!-- javascript of clock --> 
+<script src="js/calendar.js"></script> <!-- javascript of calendar --> 
+<script> 
+function myFunction() { // function of body onload
+alert("This is a Index Page");
+}
+</script>
+
+</body> <!-- end of body --> 
+</html> <!-- end of html --> 

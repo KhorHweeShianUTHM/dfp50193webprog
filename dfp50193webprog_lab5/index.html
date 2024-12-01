@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Candy Store App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<style>
+.content img {
+width: 800px;
+height: 400px;
+}
+.button .ui-btn{
+	width:300px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .content img {
+	width: 350px;
+	height: 200px;
+	}
+	.button .ui-btn{
+	width:200px;
+	}
+}
+
+</style>
+
+<body>
+	<div data-role="page" id="index">
+		<div data-role="header">
+			<h1>Candy Store</h1>
+		</div>
+
+		<div data-role="main"><center>
+			<h1>Candy Store App</h1></center>
+		</div>
+	
+		<div class="content"> <center>
+			<img src="image/candystore.jpg" width="100%">
+			<div class="button">
+				<p><a href="#menu" data-role="button">View Candy</a></p>    
+				<p><a href="#add_candy" data-role="button">Add Candy</a></p>
+			</div>
+		</center></div>
+	
+		<div data-role="footer"><h1>&copy; Candy Store</h1></div>
+	</div>
+	
+	<div data-role="page" id="menu">
+		<div data-role="header">
+			<a href="#index"><i class="fa fa-arrow-left" style="font-size:14px;"></i></a><h1>Menu</h1>
+		</div>
+ 
+		<div data-role="content"> 
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li><a href="#">Sweet Candy<span class="ui-li-count">12</span></a></li>
+				<li><a href="#">Sour Candy<span class="ui-li-count">5</span></a></li>
+				<li><a href="#">Mint<span class="ui-li-count">3</span></a></li>
+				<li><a href="#">Chocolate Candy<span class="ui-li-count">6</span></a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; Candy Store<h2>
+		</div>
+	</div>
+	
+	<div data-role="page" id="add_candy">
+		<div data-role="header">					
+			<a href="#index"><i class="fa fa-arrow-left" style="font-size:14px;"></i></a><h1>Add Candy</h1>
+		</div>
+ 
+		<div data-role="content"> 
+			<form action="#" method="get">
+			<div data-role="cname">
+				<label for="name">Candy Name</label>
+				<input type="text" name="name" id="name" value=""/>
+			</div>
+			<div data-role="ccategory">
+				<label for="category">Candy Category</label>
+				<select name="category" id="category">
+					<option value="Breathmints‎">Breath mints‎</option>
+					<option value="Candybars‎">Candy bars‎</option>
+					<option value="Gummicandies‎">Gummi candies‎</option>
+					<option value="Lollipops‎">Lollipops‎</option>
+				</select>
+			</div>
+			<div data-role="cprice">
+				<label for="price">Price</label>
+				<input type="number" name="price" id="price" value=""/>
+			</div>
+		</div>
+		
+		<div class="ui-body ui-body-b">
+			<button type="submit">Submit</button>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; Candy Store<h2>
+		</div>
+	</div>
+
+</body>
+</html>

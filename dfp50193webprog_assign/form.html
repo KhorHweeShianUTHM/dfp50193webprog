@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!-- HTML 5 -->
+<html lang="en"> <!-- start of html -->
+<head> <!-- start of head -->
+<title>Malaysia Mountain Forest</title> <!-- title of the website -->
+<meta charset="utf-8"> <!-- The charset attribute specifies the character encoding for the HTML document. -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon -->
+<link rel="stylesheet" href="css/style.css"> <!-- css of website -->
+<style>
+/* style of myForm */
+#myForm {
+  border: 2px solid #ffd278;
+  border-radius: 5px;
+  margin: 10px 200px 10px; 
+  padding: 20px 40px;
+  background-color: lightcyan;
+}
+
+/* style of inputbox(name,age,gender,comment) */
+input[type=text], select , textarea{
+  width: 120%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+}
+
+/* style of button(submit/reset) */
+input[type=button]{
+  align: center;
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* when button(submit/reset) is hover */
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+/* responsive layout */
+@media only screen and (max-width: 700px) {
+  #myForm{
+	width:100%;
+	margin: 0px;
+	padding: 0px; 
+  }
+  input[type=text], select , textarea{
+	width: 100%;
+  }
+}
+</style>
+</head> <!-- end of head -->
+
+<body onload="myFunction()"> <!-- start of body -->
+<div class="wrap"> <!-- start of wrap -->
+	<div class="header" id="header"> <!-- start of header -->
+		<img src="image/cover.jpg" style="width:100%"> <!-- header image -->
+	</div> <!-- end of header -->
+        
+    <div class="navbar" id="navbar"> <!-- start of navigation bar -->
+		<ul> <!-- start of ul -->
+			<li><a href="index.html"><b>Home</b></a></li> <!-- link to index.html -->
+			<li><a href="about.html"><b>About</b></a></li> <!-- link to about.html -->
+			<li><a href="gallery.html"><b>Gallery</b></a></li> <!-- link to gallery.html -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Mountain</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mount_kinabalu.html">Mount Kinabalu</a> <!-- link to mount_kinabalu.html -->
+					<a href="mount_murud.html">Mount Murud</a> <!-- link to mount_murud.html -->
+					<a href="crocker_range.html">Crocker Range</a> <!-- link to crocker_range.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Forest</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mossy_forest.html">Mossy Forest</a> <!-- link to mossy_forest.html -->
+					<a href="sungai_tua.html">Sungai Tua Recreational Forest</a> <!-- link to sungai_tua.html -->
+					<a href="kilim_karst.html">Kilim Karst Geoforest Park</a> <!-- link to kilim_karst.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<li><a href="contact.html"><b>Contact</b></a></li> <!-- link to contact.html -->
+			<li><a class="active" href="form.html"><b>Feedback</b></a></li> <!-- link to form.html -->
+		</ul> <!-- end of ul -->
+	</div> <!-- end of navigation bar -->
+
+	<div class="content" id="content"> <!-- start of content -->
+		<!-- start of feedback form -->
+		<form id="myForm" align="center">  
+			<h1>Malaysia Mountain Forest Feedback Form</h1>
+			<table cellspacing="2" align="center" cellpadding="8" border="0"> <!-- start of table -->   
+				<tr> <!-- start of table row 1 -->
+					<td style="text-align:left;">Name</td> <!-- name with input box -->   
+					<td><input type="text" placeholder="Enter your name" id="name"></td>
+				</tr> <!-- end of table row 1 --> 
+				
+				<tr> <!-- start of table row 2 -->
+					<td style="text-align:left;">Age</td> <!-- age with input box -->
+					<td><input type="text" placeholder="Enter your age" id="age"></td>
+				</tr> <!-- end of table row 2 -->
+				
+				<tr> <!-- start of table row 3 -->
+					<td style="text-align:left;">Gender</td> <!-- gender with dropdown list box -->
+					<td>
+						<select id="gender">
+							<option>-----</option>
+							<option id="Female">Female</option>
+							<option id="Male">Male</option>
+						</select>
+					</td>
+				</tr> <!-- end of table row 3 -->
+				
+				<tr> <!-- start of table row 4 -->
+					<td style="text-align:left;">What about website</td> <!-- evaluate webiste with radio button -->  
+					<td>
+						<input type="radio" name="mmf" id="Best" value="Excellent">Excellent<br>
+						<input type="radio" name="mmf" id="Good" value="Good">Good<br>
+						<input type="radio" name="mmf" id="Bad" value="Fair">Fair<br>
+						<input type="radio" name="mmf" id="Bad" value="Poor">Poor<br>
+						<input type="radio" name="mmf" id="Bad" value="Very Poor">Very Poor<br>
+					</td>
+				</tr> <!-- end of table row 4 --> 
+				
+				<tr> <!-- start of table row 5 -->
+					<td style="text-align:left;">Your comment for this website</td> <!-- comment with textarea box -->
+					<td><textarea cols="25" rows="5" name="comment" id="comment"></textarea></td>
+				</tr> <!-- end of table row 5 -->
+				
+			</table> <!-- end of table -->
+			<input type="button" value="Submit" onClick="_submit()"> <!-- submit button -->
+			<input type="button" value="Reset" onClick="_reset()"> <!-- reset button -->	
+		</form>
+		<!-- end of feedback form -->
+	</div> <!-- end of content -->
+	
+    <div class="footer" id="footer"> <!-- start of footer --> 
+		<p><b>@ Malaysia Mountain Forest (2021)</b></p> <!-- text of footer --> 
+	</div> <!-- end of footer --> 
+</div>
+
+<script> 
+function myFunction() { // function of body onload
+alert("This is a Feedback Page");
+}
+
+function _submit(){ // function _submit
+// variable declaration and initialization
+var n=document.getElementById("name").value; 
+var a=document.getElementById("age").value; 
+var c=document.getElementById("comment").value; 
+    var letters = /^[A-Za-z]+$/; // all text must alphabets only
+	var numbers = /^[0-9]+$/; // all text must number only
+if(n==''){  // if else selection
+alert("Enter each details correctly");  
+document.getElementById('name').style.borderColor = "red";
+return false;
+}  
+else if(a==''){  // if else selection
+alert("Enter each details correctly");  
+document.getElementById('age').style.borderColor = "red";
+return false;
+}  
+else if(!document.getElementById('Female').selected && !document.getElementById('Male').selected) { // when "female","male" is not selected
+alert("Enter each details correctly");
+document.getElementById('gender').style.borderColor = "red";
+}
+else if(!document.getElementById('Excellent').checked && !document.getElementById('Good').checked && 
+!document.getElementById('Fair').checked && !document.getElementById('Poor').checked && 
+!document.getElementById('Very Poor').checked) { // when "Excellent","Good","Fair","Poor","Very Poor" is not checked
+alert("Enter each details correctly");
+}
+else if(c==''){  // if else selection
+alert("Enter each details correctly");  
+document.getElementById('comment').style.borderColor = "red";
+return false;
+}  
+else if(!numbers.test(a)){ // if age not all number  
+alert('Age is incorrect must contain numbers only');  
+}
+else if(!letters.test(n)){ // if name not all alphabets
+alert('Name is incorrect must contain alphabets only');  
+}  
+else{ // if all input box is fill correctly
+alert("Submit Successfully");   
+}  
+}  
+
+function _reset(){ // function _reset
+alert("Clean all data"); 
+document.getElementById("myForm").reset(); // clean all data
+}
+</script>
+
+</body> <!-- end of body --> 
+</html> <!-- end of html --> 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> - freePhotos - </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slideshow.css">
+<link rel="stylesheet" href="css/calendar.css">
+<style>
+/* Style the gallery */
+.gallery {
+  border: 1px solid #ccc;
+}
+
+/* size of gallery image */
+.gallery img{
+  width: 200px;
+  height: 200px;
+}
+
+/* when hover on gallery */
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+/* Discription on gallery */
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery, .desc{
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body class="light">
+<div class="wrapper">
+	<div class="navbar">
+	  <a class="active" href="index.html">Home</a>
+	  <a href="content_icon.html">Icon</a>
+	  <a href="content_photo.html">Photo</a>
+	  <a href="content_gif.html">Gif</a>
+	  <a href="content_vector.html">Vector</a>
+	  <a href="about.html">About</a>
+	  <a href="form.html">Feedback</a>
+	</div>
+
+	<div class="header">
+		<h1>Graphic resources for everyone</h1>
+		<h3>Find Icons, photos, gif, and Vector resources in this website</h3>
+	</div>
+
+	<div class="slideshow-container">
+		<!-- Icon slideshow -->
+		<div class="mySlides fade"> <!-- It is two class one is "mySlides" and one is "fade" -->
+			<div class="numbertext">1 / 4</div>
+			<img src="image/icon1.jpg" style="width:100%">
+		</div>
+		<!-- Photo slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="image/photo1.jpg" style="width:100%">
+		</div>
+		<!-- Gif slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="image/gif1.gif" style="width:100%">
+		</div>
+		<!-- Vector slideshow -->
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="image/vector1.jpg" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> <!-- Icon slideshow -->
+	  <span class="dot" onclick="currentSlide(2)"></span> <!-- Photo slideshow -->
+	  <span class="dot" onclick="currentSlide(3)"></span> <!-- Gif slideshow -->
+	  <span class="dot" onclick="currentSlide(4)"></span> <!-- Vector slideshow -->
+	</div>
+	
+	<div class="content">
+		<h2 style="text-align:center;">We are support <u><mark>FREE</mark></u> , <u><mark>VARIETY</mark></u> and <u><mark>HIGH QUALITY</mark></u> images</h2>
+		<p style="text-align:center;"> - - - In this website we have - - - </p>
+		<div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/icon2.jpg">
+					<img src="image/icon2.jpg" style="width:100%">
+				</a>
+				<div class="desc">ICON</div>
+			</div>
+		</div>
+	  
+		<div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/photo2.jpg">
+					<img src="image/photo2.jpg" style="width:100%">
+				</a>
+				<div class="desc">PHOTO</div>
+			</div>
+		</div>
+	  
+		<div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/gif1.gif">
+					<img src="image/gif1.gif" style="width:100%">
+				</a>
+				<div class="desc">GIF</div>
+			</div>
+		</div>
+	  
+		<div class="column">
+			<div class="gallery">
+				<a target="_blank" href="image/vector2.jpg">
+					<img src="image/vector2.jpg" style="width:100%">
+				</a>
+				<div class="desc">VECTOR</div>
+			</div>
+		</div>
+	</div>
+	<center>
+	<div class="calendar ">
+	<h2 style="text-align:center; color:orange;">Calendar</h2>
+        <div class="calendar-header">
+            <span class="month-picker" id="month-picker">February</span>
+            <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                    <pre><<</pre>
+                </span>
+                <span id="year">2021</span>
+                <span class="year-change" id="next-year">
+                    <pre>>></pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+        </div>
+        <div class="calendar-footer">
+            <div class="toggle">
+                <span>Dark Mode</span>
+                <div class="dark-mode-switch">
+                    <div class="dark-mode-switch-ident"></div>
+                </div>
+            </div>
+        </div>
+        <div class="month-list"></div>
+	</div>
+	</center>
+	<div class="footer">
+		<p>© 2021 freePhotos</p>
+	</div>
+</div>
+<script src="js/calendar.js"></script> 
+<script src="js/slideshow.js"></script> 
+
+</body>
+</html>

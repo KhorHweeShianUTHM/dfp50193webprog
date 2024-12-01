@@ -1,0 +1,307 @@
+<!DOCTYPE html> <!-- HTML 5 -->
+<html lang="en"> <!-- start of html -->
+<head> <!-- start of head -->
+<title>Malaysia Mountain Forest</title> <!-- title of the website -->
+<meta charset="utf-8"> <!-- The charset attribute specifies the character encoding for the HTML document. -->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> <!-- icon -->
+<link rel="stylesheet" href="css/style.css"> <!-- css of website -->
+<style> 
+/* style of columnGallery */
+.columnGallery {
+	padding: 10px;
+	display: inline-block;
+	width: 24%;
+}
+
+/* style of gallery */
+.gallery {
+	background-color:white;
+	border: 1px solid #ccc;
+}
+
+/* style of gallery is hover */
+.gallery:hover {
+	border: 1px solid #777;
+}
+
+/* style of gallery image */
+.gallery img {
+	height: 200px;
+}
+
+/* style of gallery description */
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+/* responsive layout of column, gallery and desc */
+@media only screen and (max-width: 600px) {
+	.column {
+		position: relative;
+		top: 50%;
+		left: 13%;
+		width: 75%;
+	}
+	.gallery,.desc {
+		width:100%;
+	}
+}
+</style> 
+</head> <!-- end of head -->
+
+<body onload="myFunction()"> <!-- start of body -->
+<div class="wrap"> <!-- start of wrap -->
+	<div class="header" id="header"> <!-- start of header -->
+		<img src="image/cover.jpg" style="width:100%"> <!-- header image -->
+	</div> <!-- end of header -->
+        
+    <div class="navbar" id="navbar"> <!-- start of navigation bar -->
+		<ul> <!-- start of ul -->
+			<li><a href="index.html"><b>Home</b></a></li> <!-- link to index.html -->
+			<li><a href="about.html"><b>About</b></a></li> <!-- link to about.html -->
+			<li><a class="active" href="gallery.html"><b>Gallery</b></a></li> <!-- link to gallery.html -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Mountain</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mount_kinabalu.html">Mount Kinabalu</a> <!-- link to mount_kinabalu.html -->
+					<a href="mount_murud.html">Mount Murud</a> <!-- link to mount_murud.html -->
+					<a href="crocker_range.html">Crocker Range</a> <!-- link to crocker_range.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<div class="dropdown"> <!-- start of dropdown menu -->
+				<button class="dropbtn"><b>Forest</b> <!-- start of dropdown button -->
+					<i class="fa fa-caret-down"></i> <!-- dropdown icon -->
+				</button> <!-- end of dropdown button -->
+				<div class="dropdown-content"> <!-- start of dropdown-content -->
+					<a href="mossy_forest.html">Mossy Forest</a> <!-- link to mossy_forest.html -->
+					<a href="sungai_tua.html">Sungai Tua Recreational Forest</a> <!-- link to sungai_tua.html -->
+					<a href="kilim_karst.html">Kilim Karst Geoforest Park</a> <!-- link to kilim_karst.html -->
+				</div> <!-- end of dropdown-content -->
+			</div> <!-- end of dropdown menu -->
+			<li><a href="contact.html"><b>Contact</b></a></li> <!-- link to contact.html -->
+			<li><a href="form.html"><b>Feedback</b></a></li> <!-- link to form.html -->
+		</ul> <!-- end of ul -->
+	</div> <!-- end of navigation bar -->
+
+    <div class="content" id="content"> <!-- start of content -->
+		<h2 style="text-align:center; color:#ffffe6;">Mount Kinabalu</h2> <!-- style of Mount Kinabalu text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_kinabalu/mk1.jpg"> <!-- start of link mount_kinabalu image -->
+					<img src="image/mount_kinabalu/mk1.jpg" alt="mount_kinabalu" width="100%"> <!-- image of mount_kinabalu -->
+				</a> <!-- end of link mount_kinabalu image -->
+				<div class="desc">Mount Kinabalu 1</div> <!-- description of mount_kinabalu -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_kinabalu/mk2.jpg"> <!-- start of link mount_kinabalu image -->
+					<img src="image/mount_kinabalu/mk2.jpg" alt="mount_kinabalu" width="100%"> <!-- image of mount_kinabalu -->
+				</a> <!-- end of link mount_kinabalu image -->
+				<div class="desc">Mount Kinabalu 2</div> <!-- description of mount_kinabalu -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_kinabalu/mk3.jpg"> <!-- start of link mount_kinabalu image -->
+					<img src="image/mount_kinabalu/mk3.jpg" alt="mount_kinabalu" width="100%"> <!-- image of mount_kinabalu -->
+				</a> <!-- end of link mount_kinabalu image -->
+				<div class="desc">Mount Kinabalu 3</div> <!-- description of mount_kinabalu -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_kinabalu/mk4.jpg"> <!-- start of link mount_kinabalu image -->
+					<img src="image/mount_kinabalu/mk4.jpg" alt="mount_kinabalu" width="100%"> <!-- image of mount_kinabalu -->
+				</a> <!-- end of link mount_kinabalu image -->
+				<div class="desc">Mount Kinabalu 4</div> <!-- description of mount_kinabalu -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		
+		<h2 style="text-align:center; color:#ffffe6;">Mount Murud</h2> <!-- style of >Mount Murud text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_murud/mm1.jpg"> <!-- start of link mount_murud image -->
+					<img src="image/mount_murud/mm1.jpg" alt="mount_murud" width="100%"> <!-- image of mount_murud -->
+				</a> <!-- end of link mount_murud image -->
+				<div class="desc">Mount Murud 1</div> <!-- description of mount_murud -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_murud/mm2.jpg"> <!-- start of link mount_murud image -->
+					<img src="image/mount_murud/mm2.jpg" alt="mount_murud" width="100%"> <!-- image of mount_murud -->
+				</a> <!-- end of link mount_murud image -->
+				<div class="desc">Mount Murud 2</div> <!-- description of mount_murud -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_murud/mm3.jpg"> <!-- start of link mount_murud image -->
+					<img src="image/mount_murud/mm3.jpg" alt="mount_murud" width="100%"> <!-- image of mount_murud -->
+				</a> <!-- end of link mount_murud image -->
+				<div class="desc">Mount Murud 3</div> <!-- description of mount_murud -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mount_murud/mm4.jpg"> <!-- start of link mount_murud image -->
+					<img src="image/mount_murud/mm4.jpg" alt="mount_murud" width="100%"> <!-- image of mount_murud -->
+				</a> <!-- end of link mount_murud image -->
+				<div class="desc">Mount Murud 4</div> <!-- description of mount_murud -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		
+		<h2 style="text-align:center; color:#ffffe6;">Crocker Range</h2> <!-- style of Crocker Range text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/crocker_range/cr1.jpg"> <!-- start of link crocker_range image -->
+					<img src="image/crocker_range/cr1.jpg" alt="crocker_range" width="100%"> <!-- image of crocker_range -->
+				</a> <!-- end of link crocker_range image -->
+				<div class="desc">Crocker Range 1</div> <!-- description of crocker_range -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/crocker_range/cr2.jpg"> <!-- start of link crocker_range image -->
+					<img src="image/crocker_range/cr2.jpg" alt="crocker_range" width="100%"> <!-- image of crocker_range -->
+				</a> <!-- end of link crocker_range image -->
+				<div class="desc">Crocker Range 2</div> <!-- description of crocker_range -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/crocker_range/cr3.jpg"> <!-- start of link crocker_range image -->
+					<img src="image/crocker_range/cr3.jpg" alt="crocker_range" width="100%"> <!-- image of crocker_range -->
+				</a> <!-- end of link crocker_range image -->
+				<div class="desc">Crocker Range 3</div> <!-- description of crocker_range -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/crocker_range/cr4.jpg"> <!-- start of link crocker_range image -->
+					<img src="image/crocker_range/cr4.jpg" alt="crocker_range" width="100%"> <!-- image of crocker_range -->
+				</a> <!-- end of link crocker_range image -->
+				<div class="desc">Crocker Range 4</div> <!-- description of crocker_range -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		
+		<h2 style="text-align:center; color:#ffffe6;">Mossy Forest</h2> <!-- style of Mossy Forest text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mossy_forest/mf1.jpg"> <!-- start of link mossy_forest image -->
+					<img src="image/mossy_forest/mf1.jpg" alt="mossy_forest" width="100%"> <!-- image of mossy_forest -->
+				</a> <!-- end of link mossy_forest image -->
+				<div class="desc">Mossy Forest 1</div> <!-- description of mossy_forest -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mossy_forest/mf2.jpg"> <!-- start of link mossy_forest image -->
+					<img src="image/mossy_forest/mf2.jpg" alt="mossy_forest" width="100%"> <!-- image of mossy_forest -->
+				</a> <!-- end of link mossy_forest image -->
+				<div class="desc">Mossy Forest 2</div> <!-- description of mossy_forest -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mossy_forest/mf3.jpg"> <!-- start of link mossy_forest image -->
+					<img src="image/mossy_forest/mf3.jpg" alt="mossy_forest" width="100%"> <!-- image of mossy_forest -->
+				</a> <!-- end of link mossy_forest image -->
+				<div class="desc">Mossy Forest 3</div> <!-- description of mossy_forest -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/mossy_forest/mf4.jpg"> <!-- start of link mossy_forest image -->
+					<img src="image/mossy_forest/mf4.jpg" alt="mossy_forest" width="100%"> <!-- image of mossy_forest -->
+				</a> <!-- end of link mossy_forest image -->
+				<div class="desc">Mossy Forest 4</div> <!-- description of mossy_forest -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		
+		<h2 style="text-align:center; color:#ffffe6;">Sungai Tua Recreational Forest</h2> <!-- style of Sungai Tua text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/sungai_tua/st1.jpg"> <!-- start of link sungai_tua image -->
+					<img src="image/sungai_tua/st1.jpg" alt="sungai_tua" width="100%"> <!-- image of sungai_tua -->
+				</a> <!-- end of link sungai_tua image -->
+				<div class="desc" style="font-size:15px;">Sungai Tua Recreational Forest 1</div> <!-- description of sungai_tua -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/sungai_tua/st2.jpg"> <!-- start of link sungai_tua image -->
+					<img src="image/sungai_tua/st2.jpg" alt="sungai_tua" width="100%"> <!-- image of sungai_tua -->
+				</a> <!-- end of link sungai_tua image -->
+				<div class="desc" style="font-size:15px;">Sungai Tua Recreational Forest 2</div> <!-- description of sungai_tua -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/sungai_tua/st3.jpg"> <!-- start of link sungai_tua image -->
+					<img src="image/sungai_tua/st3.jpg" alt="sungai_tua" width="100%"> <!-- image of sungai_tua -->
+				</a> <!-- end of link sungai_tua image -->
+				<div class="desc" style="font-size:15px;">Sungai Tua Recreational Forest 3</div> <!-- description of sungai_tua -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/sungai_tua/st4.jpg"> <!-- start of link sungai_tua image -->
+					<img src="image/sungai_tua/st4.jpg" alt="sungai_tua" width="100%"> <!-- image of sungai_tua -->
+				</a> <!-- end of link sungai_tua image -->
+				<div class="desc" style="font-size:15px;">Sungai Tua Recreational Forest 4</div> <!-- description of sungai_tua -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		
+		<h2 style="text-align:center; color:#ffffe6;">Kilim Karst Geoforest Park</h2> <!-- style of Kilim Karst text heading -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk1.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk1.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 1</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk2.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk2.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 2</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk3.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk3.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 3</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+		<div class="columnGallery"> <!-- start of columnGallery -->
+			<div class="gallery"> <!-- start of gallery -->
+				<a target="_blank" href="image/kilim_karst/kk4.jpg"> <!-- start of link kilim_karst image -->
+					<img src="image/kilim_karst/kk4.jpg" alt="kilim_karst" width="100%"> <!-- image of kilim_karst -->
+				</a> <!-- end of link kilim_karst image -->
+				<div class="desc" style="font-size:15px;">Kilim Karst Geoforest Park 4</div> <!-- description of kilim_karst -->
+			</div> <!-- end of gallery -->
+		</div> <!-- end of columnGallery -->
+	</div> <!-- end of content -->
+	
+    <div class="footer" id="footer"> <!-- start of footer --> 
+		<p><b>@ Malaysia Mountain Forest (2021)</b></p> <!-- text of footer --> 
+	</div> <!-- end of footer --> 
+</div>
+<script> 
+function myFunction() { // function of body onload
+alert("This is a Gallery Page");
+}
+</script>
+
+</body> <!-- end of body --> 
+</html> <!-- end of html --> 

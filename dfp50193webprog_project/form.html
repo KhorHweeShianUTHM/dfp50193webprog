@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> - freePhotos - </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="navbar">
+	  <a href="index.html">Home</a>
+	  <a href="content_icon.html">Icon</a>
+	  <a href="content_photo.html">Photo</a>
+	  <a href="content_gif.html">Gif</a>
+	  <a href="content_vector.html">Vector</a>
+	  <a href="about.html">About</a>
+	  <a class="active" href="form.html">Feedback</a>
+	</div>
+
+	<div class="header">
+	<h1>Visitor Feedback Form</h1>
+	</div>
+	
+		<div class="form" align="center">
+		<h2>Feedback<h2>
+		<h4>--- Let's me know your favourite image ---</h4>
+			<form id="myForm" method="post" action="#" onClick="return validityCheck()">
+			<table cellspacing="10">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name" id="name" placeholder="name"></td>
+				</tr>
+				
+				<tr>
+					<td>Age</td>
+					<td><input type="number" name="age" id="age" placeholder="age"></td>
+				</tr>
+					
+				<tr>
+					<td>Gender</td>
+					<td>
+						<select name="gender" id="gender">
+							<option>Female</option>
+							<option>Male</option>
+						</select>
+					</td>
+				</tr>
+					
+				<tr>
+					<td>Favourite image</td>
+					<td id="image">
+						<input type="radio" name="img" value="Rainbow">Rainbow<br>
+						<input type="radio" name="img" value="Car">Car<br>
+					</td>
+				</tr>
+					
+				<tr>
+					<td>Your comment about the image:</td>
+					<td><textarea cols="25" rows="5" name="comment" id="comment" placeholder="comment"></textarea></td>
+				</tr>
+			</table>
+		</form>
+		<input type = "button" value = "SUBMIT" onclick = "submit();">
+		<input type = "button" value = "RESET" onclick = "reset();">
+		<br><br>
+		<p><span id="myForm"></span>
+		<a href="form.html">BACK</a></p>
+		</div>
+    
+	<div class="footer">
+	  <p>© 2021 freePhotos</p>
+	</div>
+</div>
+<script src="js/form.js"></script> 
+
+</body>
+</html>
